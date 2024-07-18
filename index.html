@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>One-click Parking Layout Generation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>One-click<br>Parking Layout Generator</h1>
+						
+						<p>An underground parking layout generation tool based on <a href="https://github.com/mxgmn/WaveFunctionCollapse">WaveFunctionCollapse(WFC) Algorithm</a><br /> developed by Lan Di, Chen Kezhen
+						from <a href="https://arch.tju.edu.cn/">School of Architecture</a>, <a href="https://www.tju.edu.cn">Tianjin University</a>.</p>
+						<ul class="actions">
+							<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<!-- <header id="header">
+						<a href="index_cn.html" class="logo">中文版</a>
+					</header> -->
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#introduction" class="scrolly">Intro</a></li>
+							<li><a href="#project" class="scrolly">Project</a></li>
+							<li><a href="#article" class="scrolly">Article</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured" id="introduction">
+								<header>
+									<h2>Introduction</h2>
+								</header>
+								<p> During the design process, underground parking layout configuration is subject to complex constraints such as site conditions and design requirements, resulting in limited design efficiency. 
+									This project aims to provide architects an effective design tool which can generate reference-worthy underground parking layout solutions based on given site information. </p>
+								<p> In this research project, we
+									extract spatial modules from underground parking layouts and transform the design constraints into
+									adjacency rules based on the analysis of the configuration process for underground parking layout,
+									then develop a generator for the underground parking layout using the
+									WaveFunctionCollapse algorithm on the Rhino-Grasshopper platform.</p>
+								
+							</article>
+
+							<article class="post featured" id="project">
+								<header>
+									<h2>The Project</h2>
+								</header>
+								<p> WaveFunctionCollapse(WFC) algorithm, initially developed by <a href="https://github.com/mxgmn/WaveFunctionCollapse">Maxim Gumin</a> in 2016, 
+									is an algorithm for procedural content generation (PCG). Inspired by the concept of wave function collapse in quantum mechanics, 
+									WFC reduces the overall entropy of the system to generate 2D or 3D patterns using predefined tiles and connection rules.</p>
+								<a class="image main"><img src="images/Figure 1.jpg" alt="" /></a>
+								<p> The basic mechanism of WFC aligns well with the characteristics of an underground parking layout. 
+									This suggests that WFC is suitable for solving configuration problems related to underground parking layouts.
+									Basic components of underground parking lots are represented as modules in WFC, 
+									while the interconnections between these modules are represented as rules. 
+									Once the modules and rules are defined, 
+									WFC can generate underground parking layouts using input site information 
+									(such as the plan outline and entrance locations).</p>
+								<a class="image main"><img src="images/Figure 22.jpg" alt="" /></a>
+								<p> We utilize <a href="https://monoceros.sub.digital/">Monoceros</a>, a Grasshopper plug-in developed by Subdigital
+									Studio, to construct the generator. Monoceros aims to provide a comprehensive
+									framework for integrating architectural or industrial design with WFC. This plug-in offers
+									full control over input and output data in a Grasshopper-compatible manner while adhering
+									to the principles of WFC. With the input of plan outlines and entrance locations, 
+									architects can efficiently generate underground parking layouts on the Rhino platform.</p>
+								<video class="video main" controls>
+									<source src="videos/video.mp4" type="video/mp4">
+								  Your browser does not support the video tag.
+								</video>
+								<ul class="actions special">
+									<li><a href="https://www.bilibili.com/video/BV19M4m1y7Mt/" class="button large">Watch Video</a></li>
+									<li><a href="wfc.rar" class="button large">
+										<source src="wfc.rar" alt="wfc_download">
+										Download Generator
+										</a></li>	
+								</ul>
+							</article>
+							
+							<article class="post featured" id="article">
+								<header>
+									<h2>Research Article</h2>
+								</header>
+								<p> A research article based on this project has been published online. 
+									</p>
+								<a href="#" class="image main"><img src="images/article01.JPG" alt="" /></a>
+								<p> <b>Abstract:</b> During the design process, architectural layout configuration is subject to complex constraints such as site conditions and design requirements, resulting in limited design efficiency. This
+									research aims to provide architects with an effective design tool that can generate reference-worthy
+									underground parking layout solutions based on the given site information. In this research, we
+									extract spatial modules from underground parking layouts, and transform the design constraints into
+									adjacency rules based on the analysis of the configuration process for underground parking layout,
+									then develop a generation and optimization model of the underground parking layout based on the
+									WaveFunctionCollapse algorithm (WFC) and Multi-objective Optimization (MOO), and verify the
+									effectiveness of the model through experiments. The results show that with given plan contour and
+									entrance/exit locations as inputs, the model can efficiently generate architectural layout solutions
+									that meet the design objectives.</p>
+								<p> <b>Keywords:</b> underground parking layout configuration; generative design; WaveFunctionCollapse
+									algorithm (WFC); multi-objective optimization (MOO)</p>
+								<ul class="actions special">
+									<li><a href="https://www.mdpi.com/2075-5309/13/11/2898#" class="button large">Read Article</a></li>
+								</ul>
+							</article>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li> email: landi730@163.com</li></ul>
+						<ul><li> last update: 2024/7/18</li></ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
